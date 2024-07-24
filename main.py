@@ -28,5 +28,13 @@ def div(a, b):
 def check(number):
     return number % 2 == 0
 
-result= -1_000_000_000 % 3
-print(result)
+def isPalindrome(s):
+    return s == s[::-1]
+
+def sort_list(numbers):
+    return sorted(numbers)
+
+def count_vowels(s):
+    """Возвращает количество гласных в строке."""
+    vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+    return sum(1 for char in s if char in vowels)
